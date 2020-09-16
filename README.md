@@ -17,7 +17,7 @@ Tech Used: Bootstrap, Font Awesome, Animate.css, Javascript, jQuery, Node.js, Ex
 
 ## Deployment
 
-A video demo of the working application can be viewed at: [Employee Tracker](https://youtu.be/M6csr1f4uBI)
+The application can be accessed at: [Burger Bonanza](LINK COMING SOON!)
 
 ## Resources
 
