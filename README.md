@@ -53,7 +53,7 @@ Heroku - https://www.heroku.com/
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/johnstoc13/Eat-Da-Burger/blob/master/LICENSE)
+This project is licensed under the [MIT License](https://github.com/johnstoc13/Burger-Bonanza/blob/master/LICENSE)
 
 ## Questions
 
