@@ -1,48 +1,84 @@
-<header class="jumbotron jumbotron-fluid bg-secondary">
-    <div class="container d-flex flex-row justify-content-center">
-        <i class="fas fa-hamburger fa-5x text-warning"></i>
-        <h1 class="display-4 text-white"><strong>&ThickSpace;Eat Da Burger&ThickSpace;</strong></h1>
-        <i class="fas fa-hamburger fa-5x text-warning"></i>
+{{!-- Header --}}
+<header class="jumbotron jumbotron-fluid py-3 py-md-4 header-bg">
+    <div class="container d-flex justify-content-center">
+        <i class="fas fa-hamburger fa-5x text-warning d-none d-md-block"></i>
+        <h1 class="display-4 text-white text-nowrap animate__animated animate__jackInTheBox">
+            <strong>&ThickSpace;&ThickSpace;Burger Bonanza!&ThickSpace;&ThickSpace;</strong></h1>
+        <i class="fas fa-hamburger fa-5x text-warning d-none d-md-block"></i>
     </div>
 </header>
 
-<h2>Menu</h2>
 
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-ready}}
-    {{/unless}}
-    {{/each}}
-</ul>
+{{!-- Main Content --}}
+<main class="container">
 
-<h2>Eaten Burgers</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-eaten}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Create Your Own Burger</h2>
-<form class="create-form" action="/api/burger" method="POST">
-
-    <div class="form-group">
-        <label for="ca">Burger Name</label>
-        <input type="text" id="ca" name="name">
+    {{!-- First Row --}}
+    <div class="row">
+        {{!-- Menu Section --}}
+        <section class="col-lg-5 mx-3 mx-lg-0 mb-3 border border-style bg-light p-3">
+            <row class="mb-2">
+                <h2 class="text-center pb-2">Menu</h2>
+            </row>
+            <ul class="pl-1">
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-ready}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </section>
+        <section class="col-lg-2"></section>
+        {{!-- Eaten Burgers Section --}}
+        <section class="col-lg-5 mx-3 mx-lg-0 mb-3 border border-style bg-light p-3">
+            <h2 class="text-center pb-2">Eaten Burgers</h2>
+            <ul class="pl-1">
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-eaten}}
+                {{/if}}
+                {{/each}}
+            </ul>
+        </section>
     </div>
 
-    <button type="submit">Add Burger</button>
-</form>
+    {{!-- Second Row --}}
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <section class="col-lg-6 mx-3 mt-lg-5 mb-4 border border-style bg-light p-3">
+            <row class="mb-2">
+                <h2 class="text-center pb-2">Create Your Own Burger</h2>
+                <form class="create-form form-inline d-flex justify-content-between mb-2">
+                    <div class="form-group mb-0">
+                        <label class="pr-2 mb-0" for="ca">Burger Name</label>
+                        <input type="text" id="ca" name="name">
+                    </div>
+                    <button class="btn btn-outline-success py-1 ml-2" type="submit">ADD BURGER!</button>
+                </form>
+            </row>
+        </section>
+        <div class="col-lg-3"></div>
+    </div>
+
+</main>
+
 
 <!-- Footer -->
 <footer class="footer-margin">
     <div class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
-        <span class="navbar-brand footer-font text-warning align-middle">Copyright &copy;2020
-            &ThickSpace;|&ThickSpace;
-            Chase Johnston</span>
-        <a class="fab fa-github text-warning" href="https://github.com/johnstoc13" target="_blank"></a>
+        <span class="navbar-brand footer-font align-middle">Copyright &copy;2020 &ThickSpace;| &ThickSpace;Chase
+            Johnston</span>
+        <span>
+            <a class="fab fa-github fa-lg text-warning" href="https://github.com/johnstoc13" target="_blank"></a>
+            &ThickSpace;
+            <a class="fab fa-linkedin fa-lg text-warning" href="https://www.linkedin.com/in/chase-johnston8"
+                target="_blank"></a>
+            &ThickSpace;
+            <a class="fas fa-envelope fa-lg text-warning" href="mailto:chasej@live.com" target="_blank"></a>
+        </span>
     </div>
 </footer>
+
+{{!-- jQuery --}}
+<script src="https://code.jquery.com/jquery.js"></script>
+{{!-- Internal Javascript --}}
+<script src="/assets/js/burgers.js"></script>
