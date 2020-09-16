@@ -1,4 +1,10 @@
-<h1>Eat Da Burger!</h1>
+<header class="jumbotron jumbotron-fluid bg-secondary">
+    <div class="container d-flex flex-row justify-content-center">
+        <i class="fas fa-hamburger fa-5x text-warning"></i>
+        <h1 class="display-4 text-white"><strong>&ThickSpace;Eat Da Burger&ThickSpace;</strong></h1>
+        <i class="fas fa-hamburger fa-5x text-warning"></i>
+    </div>
+</header>
 
 <h2>Menu</h2>
 
@@ -6,11 +12,6 @@
     {{#each burgers}}
     {{#unless devoured}}
     {{> burgers/burger-ready}}
-    {{!-- <li>
-        {{this.burger_name}}
-        <a href="/api/burger/{{this.id}}">EAT</a>
-        <a href="/api/burger/delete/{{this.id}}">DELETE</a>
-    </li> --}}
     {{/unless}}
     {{/each}}
 </ul>
@@ -21,10 +22,6 @@
     {{#each burgers}}
     {{#if devoured}}
     {{> burgers/burger-eaten}}
-    {{!-- <li>
-        {{this.burger_name}}
-        <a href="/api/burger/delete/{{this.id}}">DELETE</a>
-    </li> --}}
     {{/if}}
     {{/each}}
 </ul>
@@ -39,3 +36,13 @@
 
     <button type="submit">Add Burger</button>
 </form>
+
+<!-- Footer -->
+<footer class="footer-margin">
+    <div class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
+        <span class="navbar-brand footer-font text-warning align-middle">Copyright &copy;2020
+            &ThickSpace;|&ThickSpace;
+            Chase Johnston</span>
+        <a class="fab fa-github text-warning" href="https://github.com/johnstoc13" target="_blank"></a>
+    </div>
+</footer>
