@@ -1,5 +1,5 @@
 # Burger Bonanza
-[![license information](https://img.shields.io/badge/license-MIT-blue)](https://github.com/johnstoc13/Eat-Da-Burger/blob/master/LICENSE)
+[![license information](https://img.shields.io/badge/license-MIT-blue)](https://github.com/johnstoc13/Burger-Bonanza/blob/master/LICENSE)
 
 ## Description
 
