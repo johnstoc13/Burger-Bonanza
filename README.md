@@ -1,4 +1,4 @@
-# Eat-Da-Burger
+# Burger Bonanza
 [![license information](https://img.shields.io/badge/license-MIT-blue)](https://github.com/johnstoc13/Eat-Da-Burger/blob/master/LICENSE)
 
 ## Description
