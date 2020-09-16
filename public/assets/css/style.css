@@ -5,9 +5,33 @@
 }
 
 .footer-font {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .footer-margin {
     height: 52px;
+}
+
+.border-style {
+    border-width: 3px!important;
+    border-color: #673503!important;
+}
+
+.body-image {
+    background-image: url('/assets/img/burgerpattern.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-brown {
+    background-color: #492200;
+}
+
+.header-bg {
+    background-color: #990124;
+}
+
+span .text-warning:hover {
+    color: #5b9816!important;
 }
