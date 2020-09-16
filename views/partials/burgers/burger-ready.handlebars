@@ -1,9 +1,8 @@
-<li>
-	{{burger_name}}
-
-	<button class="change-state" data-id="{{id}}">
-		EAT!
-	</button>
-
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+<li class="d-flex justify-content-between align-items-center my-2">
+	<span>{{burger_name}}</span>
+	<span>
+		<button class="btn btn-outline-primary change-state py-1 fas fa-utensils" data-id="{{id}}"></button>
+		&ThickSpace;
+		<button class="btn btn-outline-danger delete-burger py-1 fas fa-trash-alt" data-id="{{this.id}}"></button>
+	</span>
 </li>
