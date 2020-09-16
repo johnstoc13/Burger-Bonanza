@@ -18,19 +18,19 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/burger", function(req, res) {
+router.post("/api/burgers", function(req, res) {
   burger.create([
     "burger_name", "devoured"
   ], [
     req.body.name, false
   ], function(result) {
     // Send back the ID of the new quote
-    // res.json({ id: result.insertId });
-    res.redirect("/");
+    res.json({ id: result.insertId });
+    // res.redirect("/");
   });
 });
 
-router.get("/api/burger/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
@@ -42,13 +42,13 @@ router.get("/api/burger/:id", function(req, res) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
     } else {
-        res.redirect("/");
-    //   res.status(200).end();
+        // res.redirect("/");
+      res.status(200).end();
     }
   });
 });
 
-router.get("/api/burger/delete/:id", function(req, res) {
+router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   burger.delete(condition, function(result) {
@@ -56,8 +56,8 @@ router.get("/api/burger/delete/:id", function(req, res) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
     } else {
-        res.redirect("/");
-    //   res.status(200).end();
+        // res.redirect("/");
+      res.status(200).end();
     }
   });
 });
