@@ -1,0 +1,24 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "Burger Application!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnstoc13/Eat-Da-Burger.git"
+  },
+  "author": "Chase Johnston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnstoc13/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/johnstoc13/Eat-Da-Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
