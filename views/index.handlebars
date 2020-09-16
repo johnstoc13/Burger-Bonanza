@@ -5,11 +5,12 @@
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    <li>
+    {{> burgers/burger-ready}}
+    {{!-- <li>
         {{this.burger_name}}
         <a href="/api/burger/{{this.id}}">EAT</a>
         <a href="/api/burger/delete/{{this.id}}">DELETE</a>
-    </li>
+    </li> --}}
     {{/unless}}
     {{/each}}
 </ul>
@@ -19,10 +20,11 @@
 <ul>
     {{#each burgers}}
     {{#if devoured}}
-    <li>
+    {{> burgers/burger-eaten}}
+    {{!-- <li>
         {{this.burger_name}}
         <a href="/api/burger/delete/{{this.id}}">DELETE</a>
-    </li>
+    </li> --}}
     {{/if}}
     {{/each}}
 </ul>
