@@ -7,6 +7,14 @@ This project is for all the burger lovers out there! The application allows the 
 
 Tech Used: Bootstrap, Font Awesome, Animate.css, Javascript, jQuery, Node.js, Express.js, MySQL, Handlebars
 
+## Table of Contents
+- [Description](#description)
+- [Deployment](#deployment)
+- [Resources](#resources)
+- [Images](#images)
+- [License](#license)
+- [Questions](#questions)
+
 ## Deployment
 
 A video demo of the working application can be viewed at: [Employee Tracker](https://youtu.be/M6csr1f4uBI)
