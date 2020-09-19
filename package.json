@@ -1,5 +1,5 @@
 {
-  "name": "eat-da-burger",
+  "name": "burger-bonanza",
   "version": "1.0.0",
   "description": "Burger Application!",
   "main": "server.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnstoc13/Eat-Da-Burger.git"
+    "url": "git+https://github.com/johnstoc13/Burger-Bonanza.git"
   },
   "author": "Chase Johnston",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johnstoc13/Eat-Da-Burger/issues"
+    "url": "https://github.com/johnstoc13/Burger-Bonanza/issues"
   },
-  "homepage": "https://github.com/johnstoc13/Eat-Da-Burger#readme",
+  "homepage": "https://github.com/johnstoc13/Burger-Bonanza#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
