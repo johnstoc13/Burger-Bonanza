@@ -17,7 +17,7 @@ Tech Used: Bootstrap, Font Awesome, Animate.css, Javascript, jQuery, Node.js, Ex
 
 ## Deployment
 
-The application can be accessed at: [Burger Bonanza](LINK COMING SOON!)
+The application can be accessed at: [Burger Bonanza](https://chases-burger-bonanza.herokuapp.com/)
 
 ## Resources
 
